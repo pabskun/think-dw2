@@ -10,6 +10,7 @@ html {
 /* Estilos del banner */
 
 .sct-banner {
+    display: flow-root;
     margin-bottom: 80px;
     width: 100%;
 }
