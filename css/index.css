@@ -1,3 +1,5 @@
+/* Resolución general (móvil) */
+
 html {
     font-size: 16px;
     /* 1rem */
@@ -8,6 +10,7 @@ html {
 /* Estilos del banner */
 
 .sct-banner {
+    margin-bottom: 80px;
     width: 100%;
 }
 
@@ -45,6 +48,82 @@ html {
 
 .sct-banner .feature p:nth-child(2) {
     font-size: 1.5rem;
+}
+
+
+/* Sección local picks */
+
+.sct-local {
+    padding: 0 2%;
+}
+
+.sct-local h2 {
+    font-size: 1.5rem;
+}
+
+.sct-local .img-container img {
+    width: 100%;
+}
+
+.sct-local .card {
+    border-bottom: 1px solid rgba(117, 117, 117, 0.3);
+    color: var(--negro-titulo);
+    padding: 20px 0;
+}
+
+.sct-local .card header {
+    display: none;
+}
+
+.sct-local .card header img {
+    width: 100%;
+}
+
+.sct-local span {
+    color: var(--gris-categoria);
+    display: block;
+    font-size: 0.75rem;
+    margin-bottom: 15px;
+}
+
+.sct-local p {
+    font-size: 1.125rem;
+    margin-bottom: 20px;
+}
+
+.sct-local a {
+    color: var(--acento);
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 600px) {
+    .sct-local {
+        display: flow-root;
+        padding: 0 4%;
+    }
+    .sct-local .banner {
+        display: none;
+    }
+    .sct-local .card {
+        border: 1px solid rgba(117, 117, 117, 0.3);
+        border-radius: 10px;
+        float: left;
+        margin: 30px 2%;
+        min-height: 305px;
+        width: 45%;
+    }
+    .sct-local .card header {
+        display: block;
+    }
+    .sct-local .card span {
+        padding: 0 3%;
+    }
+    .sct-local .card p {
+        padding: 0 3%;
+    }
+    .sct-local .card a {
+        padding: 0 3%;
+    }
 }
 
 @media only screen and (min-width: 768px) {
